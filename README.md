@@ -3,9 +3,8 @@
 
 <p align="center">
   <br>
-  이미지는 추후에 변경하시거나 삭제하시면 됩니다.<br /> 보통 메인 이미지를 올려놓습니다.<br />
   <img src="./readme-static/img/img/main.png">
-   <img src="./readme-static/img/img/축제 (14).png">
+
   <br>
 </p>
 
@@ -22,6 +21,7 @@
 상대방이 프로젝트를 예시로 한 번에 볼수 있게 만들어주는게 좋습니다.<br />
 또는 배포하여 프로젝트 사이트를 올려도 좋습니다.<br />
 <strong>GIF</strong> 또는 <strong>Images</strong>
+   <img src="./readme-static/img/img/축제 (14).png">
 </p>
 
 <br>

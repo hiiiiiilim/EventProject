@@ -77,3 +77,5 @@ MVC : DTO DAO
 
 [js]: ./readme-static/img/javascript.svg
 [java]: ./readme-static/img/java.svg
+[html]: ./readme-static/img/html.png
+[css]: ./readme-static/img/css.png

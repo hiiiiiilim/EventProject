@@ -10,6 +10,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>예약</title>
 <link rel="stylesheet" type="text/css" href="./css/event.css">
+<link rel="stylesheet" type="text/css" href="./css/register.css">
 <style>
 .center-register {
 	width: 100%;

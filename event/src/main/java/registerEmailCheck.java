@@ -41,11 +41,11 @@ public class registerEmailCheck extends HttpServlet {
             if (rs.next()) {
             	isNull = 2;
             	System.out.println("isTrue :" +isNull);
-                redirectURL = "register.jsp?isTrue="+isNull;
+                redirectURL = "join.jsp?isTrue="+isNull;
             } else {
             	isNull=1;
             	System.out.println("isTrue :" +isNull);
-            	redirectURL = "register.jsp?email=" + email + "&isTrue=" + isNull;
+            	redirectURL = "join.jsp?email=" + email + "&isTrue=" + isNull;
             }
 
             response.sendRedirect(redirectURL);

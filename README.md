@@ -16,14 +16,18 @@
 흩어져있는 행사들 모여라! <br>평소 전시/관람/패스티벌에 대한 정보를 얻기는 쉽지만 한번에 정보를 모아서 보기 힘들어 프로젝트를 기획하게 되었습니다.
 </p>
 
-<a href="https://drive.google.com/file/d/1mG-G1pvNusgcNeo4dG5fRqusZKPWVOaS/view?usp=sharing">https://drive.google.com/file/d/1mG-G1pvNusgcNeo4dG5fRqusZKPWVOaS/view?usp=sharing"<a>
+<a href="https://drive.google.com/file/d/1mG-G1pvNusgcNeo4dG5fRqusZKPWVOaS/view?usp=sharing">https://drive.google.com/file/d/1mG-G1pvNusgcNeo4dG5fRqusZKPWVOaS/view?usp=sharing<a>
 
 <p align="center">
-여러분이 만든 프로젝트를 캡쳐하거나 <strong>GIF</strong> 화면으로 만들어 <br />
-상대방이 프로젝트를 예시로 한 번에 볼수 있게 만들어주는게 좋습니다.<br />
-또는 배포하여 프로젝트 사이트를 올려도 좋습니다.<br />
-<strong>GIF</strong> 또는 <strong>Images</strong>
    <img src="./readme-static/img/img/축제 (14).png">
+   <img src="./readme-static/img/img/예약변경.png">
+   <img src="./readme-static/img/img/예약조회1.png">
+   <img src="./readme-static/img/img/예약조회2.png">
+   <img src="./readme-static/img/img/예약취소.png">
+   <img src="./readme-static/img/img/내정보 수정.png">
+   <img src="./readme-static/img/img/마이페이지.png">
+   <img src="./readme-static/img/img/회원탈퇴.png">
+   <img src="./readme-static/img/img/사용가능이메일.png">
 </p>
 
 <br>

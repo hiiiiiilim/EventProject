@@ -24,8 +24,8 @@
    <img src="./readme-static/img/img/예약조회1.png">
    <img src="./readme-static/img/img/예약조회2.png">
    <img src="./readme-static/img/img/예약취소.png">
-   <img src="./readme-static/img/img/내정보 수정.png">
    <img src="./readme-static/img/img/마이페이지.png">
+   <img src="./readme-static/img/img/내정보 수정.png">
    <img src="./readme-static/img/img/회원탈퇴.png">
    <img src="./readme-static/img/img/사용가능이메일.png">
 </p>

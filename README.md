@@ -34,9 +34,9 @@
 
 ## 기술 스택
 
-| JavaScript |    Java    |   HTML     |     css    | 
-| :--------: | :--------: | :--------: | :--------: | 
-|   ![js]    |  ![java]   |  ![html]   |  ![css]    |
+| JavaScript |    Java    |   HTML     |     css    |    oracle  | 
+| :--------: | :--------: | :--------: | :--------: | :--------: |
+|   ![js]    |  ![java]   |  ![html]   |  ![css]    |  ![oracle] |
 
 <br>
 
@@ -77,3 +77,4 @@
 [java]: ./readme-static/img/java.svg
 [html]: ./readme-static/img/html.png
 [css]: ./readme-static/img/css.png
+[oracle]: ./readme-static/img/oracle.png

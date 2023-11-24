@@ -1,15 +1,19 @@
 package hj.event;
 
+import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+import javax.servlet.http.HttpServletResponse;
+
 public class ReservationSearchDAO {
 	private static final String jdbcURL="jdbc:oracle:thin:@localhost:1521:xe";
 	private static final String jdbcUserName="kiga";
 	private static final String jdbcPassword="kiga1234";
+	private static  HttpServletResponse response;
 		
 	public ReservationSearchDAO() {
 		try {
@@ -26,7 +30,7 @@ public class ReservationSearchDAO {
 		try {
 			Connection connection = DriverManager.getConnection(jdbcURL, jdbcUserName, jdbcPassword);
 			
-			//¿¹¾àÁ¶È¸½Ã Ã£À» ¹øÈ£¿Í, ÀÌ¸ÞÀÏ
+			//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¸ï¿½ï¿½ Ã£ï¿½ï¿½ ï¿½ï¿½È£ï¿½ï¿½, ï¿½Ì¸ï¿½ï¿½ï¿½
 			String sql = "select r.r_id, r.r_email, r.r_phonenumber,person, e.event_name, e.event_day, e.event_location ,(e.event_price*r.person)as total\r\n"
 					+ "from reservation r, event e\r\n"
 					+ "where r.event_number=e.event_number\r\n"
@@ -58,7 +62,6 @@ public class ReservationSearchDAO {
 	}
 	
 	public void updateInfo(int r_id, int person) {
-		ReservationDTO r = null;
 		try {
 			Connection connection = DriverManager.getConnection(jdbcURL, jdbcUserName, jdbcPassword);
 			String sql = "update reservation set person = ? where r_id =?";
@@ -75,4 +78,49 @@ public class ReservationSearchDAO {
 		}
 	}
 	
+	
+	public void mypage_info_update(String phonenumber, String email) {
+		try {
+			Connection conn = DriverManager.getConnection(jdbcURL, jdbcUserName, jdbcPassword);
+			
+			String sql = "update users set phonenumber = ? where email = ?";
+			
+			PreparedStatement ps = conn.prepareStatement(sql);
+			ps.setString(1, phonenumber);
+			ps.setString(2, email);
+			
+			ps.executeUpdate();
+			
+			//response.sendRedirect("mypage_update_success.jsp");
+		} catch (SQLException e ) {
+		 try {
+                response.sendRedirect("mypage_update_error.jsp");
+            } catch (IOException ioException) {
+                ioException.printStackTrace();
+            }
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	public void resign(String email, String password) {
+		try {
+			String sql = "DELETE Users WHERE email = ? AND password = ?";
+			Connection conn = DriverManager.getConnection(jdbcURL, jdbcUserName, jdbcPassword);
+			PreparedStatement ps = conn.prepareStatement(sql);
+			ps.setString(1, email);
+			ps.setString(2, password);
+			ps.executeUpdate();
+			
+			//response.sendRedirect("resignlogout.jsp");
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	public void login() {
+		
+	}
 }

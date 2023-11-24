@@ -48,7 +48,7 @@
 		<h2 style="padding-top:15px">내 정보 수정</h2>
 		<!-- 안에 글넣는 하얀 박스-->
 		<div id="reviewbox">
-            <form action="mypage_info_update" method="post">
+            <form action="mypage_update_success.jsp" method="post">
             	<%
 					String email = (String) session.getAttribute("email");
 					String name = (String) session.getAttribute("name");	

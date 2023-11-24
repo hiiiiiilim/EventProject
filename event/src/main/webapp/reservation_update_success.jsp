@@ -56,8 +56,6 @@
            <%
 				int r_id = Integer.parseInt(request.getParameter("r_id"));
 				int person =Integer.parseInt(request.getParameter("person"));
-				System.out.println(r_id);
-				System.out.println(person);
 				ReservationSearchDAO rdao = new ReservationSearchDAO();
 				rdao.updateInfo(r_id, person);
 			%>

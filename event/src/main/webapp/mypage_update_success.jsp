@@ -1,3 +1,4 @@
+<%@page import="hj.event.ReservationSearchDAO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
     <!DOCTYPE html>
@@ -56,6 +57,12 @@
 		<div id="reviewbox">
             <h2>내 정보 수정에 성공하였습니다.</h2>
             <p>3초 후 메인화면으로 이동합니다.</p>
+            <%
+            	String phonenumber = request.getParameter("phonenumber");
+            	String email = request.getParameter("email");
+            	ReservationSearchDAO rdao = new ReservationSearchDAO();
+            	rdao.mypage_info_update(phonenumber, email);
+            %>
         </div>
 	 </div>
 </div>	

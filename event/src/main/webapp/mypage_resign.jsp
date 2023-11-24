@@ -53,7 +53,7 @@
      <h3 style="text-align:center;padding-top:20px;">회원탈퇴</h3>
 	     <div id="reviewbox">
 	     <!-- 내 정보가 표시될 공간 -->
-				<form action="resignServlet" method="post" style="display: inline-block;">
+				<form action="resignlogout.jsp" method="post" style="display: inline-block;">
 					<label for ="password">비밀번호 : </label>
 					<input type="password" name="password">
 					<input type="hidden" name = "email" value="<%=request.getParameter("email")%>">

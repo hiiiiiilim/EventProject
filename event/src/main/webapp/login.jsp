@@ -54,7 +54,7 @@
 			<div id="reviewbox">
 				<!-- 예약정보 조회란 -->
 				<div id="r_search">
-					<form action="loginServlet" method="post">
+			<form action="loginServlet" method="post">
 				<label for="email">이메일</label> &nbsp;&nbsp;
 				<input type="email" id="email" name="email" class="size" required><br>
 				<label for="password">비밀번호</label>

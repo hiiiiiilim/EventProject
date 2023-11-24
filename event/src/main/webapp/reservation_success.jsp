@@ -56,6 +56,11 @@
 		
 		EventPosting eventPosting = eventPostingDAO.getEventInfo(event_number);
 	%>
+	
+	<!-- 예약정보 가져오기 -->
+	<%
+		
+	%>
 		<h2 style="padding-top:15px">예약</h2>
 		<!-- 안에 글넣는 하얀 박스-->
 		<div id="reviewbox" style="margin-top: 50px">
